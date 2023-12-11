@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <title>module2_solution</title>
+</head>
+
+<style>
+    body {
+        font-family: "Comic Sans MS";
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    h1 {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .pt1 {
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: 0px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: lightblue;
+    }
+
+    .pt2 {
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: 0px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: lightyellow;
+    }
+
+    .pt3 {
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: 0px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: lightgreen;
+    }
+
+    .content1 {
+        float: left;
+        padding: 25px;
+    }
+
+    .content2 {
+        float: left;
+        padding: 25px;
+    }
+
+    .content3 {
+        float: left;
+        padding: 25px;
+    }
+
+    .section-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .test {
+        width: 100%;
+        background-color: lightgrey;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    /*desktop view*/
+    @media (min-width: 992px) {
+        .test {
+            width: calc(33.33% - 20px);
+            margin-right: 20px;
+        }
+    }
+
+    /*tablet view*/
+    @media (min-width: 768px) and (max-width: 991px) {
+        .test {
+            width: calc(50% - 40px);
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .test:nth-child(3) {
+            width: 100%;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+
+</style>
+
+<body>
+    <h1>Our Menu</h1>
+
+    <div class="section-container">
+        <section class="test">
+            <p class="pt1">Sushi</p>
+            <p class="content1">Sushi is a Japanese culinary delight that typically features vinegared rice combined with various ingredients like raw or cooked seafood, vegetables, and seaweed. Often served with soy sauce, wasabi, and pickled ginger, sushi showcases a harmonious blend of textures and flavors, creating a unique and artful dining experience.</p>
+        </section>
+
+        <section class="test">
+            <p class="pt2">Ramen</p>
+            <p class="content2">Ramen, another Japanese staple, is a comforting noodle soup dish with Chinese origins. It consists of Chinese-style wheat noodles served in a meat or fish-based broth, topped with ingredients such as sliced pork, nori, and green onions. Ramen's popularity has spread globally, and its diverse regional variations offer a wide range of delectable options.</p>
+        </section>
+
+        <section class="test">
+            <p class="pt3">Udon</p>
+            <p class="content3">Udon, a thick wheat noodle, is a versatile and hearty dish in Japanese cuisine. Whether served hot in a savory broth or cold with a dipping sauce, udon noodles maintain a satisfying chewy texture. Toppings like tempura, green onions, and bonito flakes complement the simplicity of the noodles, making udon a comforting and flavorful choice for noodle enthusiasts.</p>
+        </section>
+    </div>
+
+</body>
+
+</html>
